@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box; }
+
+:-webkit-full-screen a {
+  display: flex; }
+
+:-moz-full-screen a {
+  display: flex; }
+
+:-ms-fullscreen a {
+  display: -ms-flexbox;
+  display: flex; }
+
+:fullscreen a {
+  display: -ms-flexbox;
+  display: flex; }
+
+html {
+  height: 100%; }
+
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+#wrapper {
+  min-height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+nav#navigation {
+  -ms-flex-preferred-size: 70px;
+      flex-basis: 70px;
+  background-color: limegreen;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  color: white; }
+
+#content {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  background-color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-weight: 300;
+  font-size: 3rem; }

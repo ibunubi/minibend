@@ -1,0 +1,39 @@
+* { box-sizing: border-box }
+:fullscreen a {
+    display: flex
+}
+html{
+  height: 100%;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+#wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+nav{
+  &#navigation {
+    flex-basis: 70px;
+    background-color: limegreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+}
+#content{
+  flex-grow: 1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 300;
+  font-size: 3rem;
+}
