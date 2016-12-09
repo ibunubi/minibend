@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gulp in Action</title>
+    <title>Minibend</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -29,15 +29,29 @@
         <span></span>
       </a>
       <div id="menu">
-        <div class="pure-menu">
+        <div class="pure-menu custom-restricted-width">
           <a class="pure-menu-heading" href="#">Minibend</a>
           <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
-            <li class="pure-menu-item" class="menu-item-divided pure-menu-selected">
-              <a href="#" class="pure-menu-link">Services</a>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Dashboard</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">UI Elements</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Forms</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Grids</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tables</a></li>
+            <li class="pure-menu-item pure-menu-has-children">
+              <a href="#" id="menuLink1" class="pure-menu-link">Menu Levels</a>
+              <ul class="pure-menu-children">
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Autos</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Flickr</a></li>
+                <li class="pure-menu-item pure-menu-has-children">
+                  <a href="#" id="menuLink1" class="pure-menu-link">Even More</a>
+                  <ul class="pure-menu-children">
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Foo</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Bar</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Baz</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -46,7 +60,13 @@
           <div class="pure-menu pure-menu-horizontal">
             <ul class="pure-menu-list">
               <li class="pure-menu-item"><a href="#" class="pure-menu-link">Welcome Nubi</a></li>
-              <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Logout</a></li>
+              <li class="pure-menu-item pure-menu-has-children"> <!-- just add class "pure-menu-allow-hover" to work with show on hover -->
+                  <a href="#" id="menuLink1" class="pure-menu-link"><span class="fa fa-gear"></span></a>
+                  <ul class="pure-menu-children">
+                      <li class="pure-menu-item"><a href="#" class="pure-menu-link">My Account</a></li>
+                      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Logout</a></li>
+                  </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -75,6 +95,7 @@
 
     <!--build:js js/main.min.js -->
     <script src="./js/script.js"></script>
+    <script src="./js/menus.js"></script>
     <!-- endbuild -->
   </body>
 </html>
