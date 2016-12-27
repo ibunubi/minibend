@@ -92,6 +92,15 @@ appears on the left side of the page.
     color: #999;
     border: none;
     padding: 0.6em 0 0.6em 0.6em;
+    .fa{
+      color: white;
+    }
+    &:hover{
+      color: white;
+      .fa{
+        color: limegreen;
+      }
+    }
   }
   .pure-menu {
     border: none;
@@ -107,6 +116,7 @@ appears on the left side of the page.
     li a {
       &:hover, &:focus {
         background: #333;
+        color: white;
       }
     }
   }
@@ -120,6 +130,25 @@ appears on the left side of the page.
     font-size: 110%;
     color: #fff;
     margin: 0;
+  }
+  .pure-menu-active > .pure-menu-link,
+  .pure-menu-link:hover,
+  .pure-menu-link:focus {
+      background-color: #eee;
+      color: #333;
+      .fa{
+        color: limegreen;
+      }
+  }
+  .pure-menu-has-children{
+    li{
+      a{
+        &:hover, &:focus{
+          background-color: #eee;
+          color: #333;
+        }
+      }
+    }
   }
 }
 

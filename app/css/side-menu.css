@@ -72,6 +72,12 @@ appears on the left side of the page.
     color: #999;
     border: none;
     padding: 0.6em 0 0.6em 0.6em; }
+    #menu a .fa {
+      color: white; }
+    #menu a:hover {
+      color: white; }
+      #menu a:hover .fa {
+        color: limegreen; }
   #menu .pure-menu {
     border: none;
     background: transparent; }
@@ -82,7 +88,8 @@ appears on the left side of the page.
     #menu .pure-menu .menu-item-divided {
       border-top: 1px solid #333; }
     #menu .pure-menu li a:hover, #menu .pure-menu li a:focus {
-      background: #333; }
+      background: #333;
+      color: white; }
   #menu .pure-menu-selected, #menu .pure-menu-heading {
     background: limegreen; }
   #menu .pure-menu-selected a {
@@ -91,6 +98,18 @@ appears on the left side of the page.
     font-size: 110%;
     color: #fff;
     margin: 0; }
+  #menu .pure-menu-active > .pure-menu-link,
+  #menu .pure-menu-link:hover,
+  #menu .pure-menu-link:focus {
+    background-color: #eee;
+    color: #333; }
+    #menu .pure-menu-active > .pure-menu-link .fa,
+    #menu .pure-menu-link:hover .fa,
+    #menu .pure-menu-link:focus .fa {
+      color: limegreen; }
+  #menu .pure-menu-has-children li a:hover, #menu .pure-menu-has-children li a:focus {
+    background-color: #eee;
+    color: #333; }
 
 /*
 All anchors inside the menu should be styled like this.
